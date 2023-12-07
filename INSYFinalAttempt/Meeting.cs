@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace INSYFinalAttempt
 {
-    internal class Meeting
+     public class Meeting
     {
+        public string Location { get; set; }
+        public DateTime DateTime { get; set; }
+        public string[] MeetingTopics { get; set; }
+
+        // Constructors
+        public Meeting(string location, DateTime dateTime, string[] meetingTopics)
+        {
+            Location = location;
+            DateTime = dateTime;
+            MeetingTopics = meetingTopics;
+        }
     }
 }
